@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3804F7D7-49F0-4620-9884-8F9BC87CE7D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>RestoranSistemi</RootNamespace>
+    <AssemblyName>RestoranSistemi</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AnaMenü.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AnaMenü.Designer.cs">
+      <DependentUpon>AnaMenü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="anayemek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="anayemek.Designer.cs">
+      <DependentUpon>anayemek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="içecekler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="içecekler.Designer.cs">
+      <DependentUpon>içecekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kasa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Kasa.Designer.cs">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasaanayemek.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kasaanayemek.Designer.cs">
+      <DependentUpon>kasaanayemek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasaiçecekler.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kasaiçecekler.Designer.cs">
+      <DependentUpon>kasaiçecekler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kasatatlı.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="kasatatlı.Designer.cs">
+      <DependentUpon>kasatatlı.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menü.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Menü.Designer.cs">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AnaGiriş.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AnaGiriş.Designer.cs">
+      <DependentUpon>AnaGiriş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Personel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Personel.Designer.cs">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Rezervasyon.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Rezervasyon.Designer.cs">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sipariş.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Sipariş.Designer.cs">
+      <DependentUpon>Sipariş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tatlılar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tatlılar.Designer.cs">
+      <DependentUpon>tatlılar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yenimutfak.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="yenimutfak.Designer.cs">
+      <DependentUpon>yenimutfak.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AnaMenü.resx">
+      <DependentUpon>AnaMenü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="anayemek.resx">
+      <DependentUpon>anayemek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="içecekler.resx">
+      <DependentUpon>içecekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kasa.resx">
+      <DependentUpon>Kasa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasaanayemek.resx">
+      <DependentUpon>kasaanayemek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasaiçecekler.resx">
+      <DependentUpon>kasaiçecekler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kasatatlı.resx">
+      <DependentUpon>kasatatlı.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menü.resx">
+      <DependentUpon>Menü.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AnaGiriş.resx">
+      <DependentUpon>AnaGiriş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Personel.resx">
+      <DependentUpon>Personel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rezervasyon.resx">
+      <DependentUpon>Rezervasyon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sipariş.resx">
+      <DependentUpon>Sipariş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tatlılar.resx">
+      <DependentUpon>tatlılar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yenimutfak.resx">
+      <DependentUpon>yenimutfak.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
