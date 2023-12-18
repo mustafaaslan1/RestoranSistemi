@@ -107,12 +107,16 @@ namespace RestoranSistemi
 
         private void btnYardim_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("UYGULAMAYI NASIL KULLANABİLECEĞİNİZ AŞAĞIDA YAZMAKTADIR. \n\n" +
-                " 1- Menüler arasında rahatlıkla geçiş yapabilirsiniz.\n\n" +
+            MessageBox.Show(" 1- Menüler arasında rahatlıkla geçiş yapabilirsiniz.\n\n" +
                 " 2- Menü kısmında 'ÜRÜN' fiyatlarını görmek istiyorsanız sağ tarafta bulunan seçeneklere tıklayabilirsiniz.\n\n" +
                 " 3- Kasa ve Ödeme kısmı sorunsuz bir şekilde çalışmaktadır.\n\n" +
                 " 4- Ödeme yöntemini seçmeyi unutmayın!\n\n" +
-                " 5- Fiyatları bakıp ödenecek tutarın toplamını girmeniz gerekmektedir!"
+                " 5- Fiyatları bakıp ödenecek tutarın toplamını girmeniz gerekmektedir!\n\n" +
+                " 6- Rezervasyon kaydı yapabilirsiniz, kaydı görüntülemek için Rezervasyon Görüntüle kısmına tıklamalısınız.\n\n" +
+                " 7- Mutfak kısmı sıkıntısız çalışmaktadır.\n\n" +
+                " 7.1- Ürün kaydı yaparken boş kutu bırakmayınız.\n\n" +
+                " 7.2- Ürünleri güncellemek istediğinizde ürün listesinden bir ürün seçip 'ÜRÜN GÜNCELLE' kısmına basmalısınız.\n\n" +
+                " 7.3- Ürün Güncelle kısmına bastığınızda ürün listeden gidip yan kısıma eklenecektir.\n\n"
                 ,"YARDIM", MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 

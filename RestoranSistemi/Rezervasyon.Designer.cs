@@ -117,7 +117,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Chocolate;
-            this.panel5.Location = new System.Drawing.Point(222, 459);
+            this.panel5.Location = new System.Drawing.Point(225, 460);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(19, 65);
             this.panel5.TabIndex = 9;
@@ -133,7 +133,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Chocolate;
-            this.panel4.Location = new System.Drawing.Point(222, 363);
+            this.panel4.Location = new System.Drawing.Point(225, 364);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(19, 65);
             this.panel4.TabIndex = 9;
@@ -141,7 +141,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Chocolate;
-            this.panel3.Location = new System.Drawing.Point(222, 266);
+            this.panel3.Location = new System.Drawing.Point(225, 267);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(19, 66);
             this.panel3.TabIndex = 9;
@@ -149,7 +149,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Chocolate;
-            this.panel2.Location = new System.Drawing.Point(222, 168);
+            this.panel2.Location = new System.Drawing.Point(225, 169);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(19, 65);
             this.panel2.TabIndex = 8;

@@ -30,6 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(yenimutfak));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnGüncelle = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -40,9 +43,6 @@
             this.btnSil = new System.Windows.Forms.Button();
             this.btnEkle = new System.Windows.Forms.Button();
             this.listView1 = new System.Windows.Forms.ListView();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btnGüncelle = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +66,38 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(261, 639);
             this.panel1.TabIndex = 3;
+            // 
+            // btnGüncelle
+            // 
+            this.btnGüncelle.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.btnGüncelle.FlatAppearance.BorderSize = 0;
+            this.btnGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGüncelle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnGüncelle.Location = new System.Drawing.Point(0, 458);
+            this.btnGüncelle.Name = "btnGüncelle";
+            this.btnGüncelle.Size = new System.Drawing.Size(261, 65);
+            this.btnGüncelle.TabIndex = 11;
+            this.btnGüncelle.Text = "ÜRÜN GÜNCELLE";
+            this.btnGüncelle.UseVisualStyleBackColor = false;
+            this.btnGüncelle.Click += new System.EventHandler(this.btnGüncelle_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label4.Location = new System.Drawing.Point(3, 310);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(135, 20);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "HARCANAN STOK:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox3.Location = new System.Drawing.Point(156, 307);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(102, 27);
+            this.textBox3.TabIndex = 9;
             // 
             // label3
             // 
@@ -138,7 +170,7 @@
             this.btnSil.FlatAppearance.BorderSize = 0;
             this.btnSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSil.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnSil.Location = new System.Drawing.Point(-3, 547);
+            this.btnSil.Location = new System.Drawing.Point(0, 546);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(261, 65);
             this.btnSil.TabIndex = 1;
@@ -169,38 +201,6 @@
             this.listView1.Size = new System.Drawing.Size(676, 636);
             this.listView1.TabIndex = 2;
             this.listView1.UseCompatibleStateImageBehavior = false;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.textBox3.Location = new System.Drawing.Point(156, 307);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(102, 27);
-            this.textBox3.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label4.Location = new System.Drawing.Point(3, 310);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 20);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "HARCANAN STOK:";
-            // 
-            // btnGüncelle
-            // 
-            this.btnGüncelle.BackColor = System.Drawing.Color.SpringGreen;
-            this.btnGüncelle.FlatAppearance.BorderSize = 0;
-            this.btnGüncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGüncelle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGüncelle.Location = new System.Drawing.Point(0, 458);
-            this.btnGüncelle.Name = "btnGüncelle";
-            this.btnGüncelle.Size = new System.Drawing.Size(261, 65);
-            this.btnGüncelle.TabIndex = 11;
-            this.btnGüncelle.Text = "ÜRÜN GÜNCELLE";
-            this.btnGüncelle.UseVisualStyleBackColor = false;
-            this.btnGüncelle.Click += new System.EventHandler(this.btnGüncelle_Click);
             // 
             // yenimutfak
             // 

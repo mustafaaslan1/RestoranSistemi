@@ -25,7 +25,7 @@ namespace RestoranSistemi
             listView1.FullRowSelect = true;
             listView1.View = View.Details;
             listView1.Visible = false;
-            listView1.Columns.Add("AD SOYAD", 120);
+            listView1.Columns.Add("AD SOYAD", 130);
             listView1.Columns.Add("SAAT", 120);
             listView1.Columns.Add("TARİH", 120);
             listView1.Columns.Add("TELEFON", 140);
