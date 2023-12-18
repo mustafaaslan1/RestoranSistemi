@@ -51,13 +51,13 @@
             this.btnZil = new System.Windows.Forms.Button();
             this.timer = new System.Windows.Forms.Timer(this.components);
             this.saatlbl = new System.Windows.Forms.Label();
-            this.yenimutfak1 = new RestoranSistemi.yenimutfak();
             this.anaMenü2 = new RestoranSistemi.AnaMenü();
             this.kasa2 = new RestoranSistemi.Kasa();
             this.rezervasyon2 = new RestoranSistemi.Rezervasyon();
             this.menü1 = new RestoranSistemi.Menü();
             this.personel1 = new RestoranSistemi.Personel();
             this.sipariş1 = new RestoranSistemi.Sipariş();
+            this.yenimutfak1 = new RestoranSistemi.yenimutfak();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -330,13 +330,6 @@
             this.saatlbl.Size = new System.Drawing.Size(0, 25);
             this.saatlbl.TabIndex = 0;
             // 
-            // yenimutfak1
-            // 
-            this.yenimutfak1.Location = new System.Drawing.Point(248, 37);
-            this.yenimutfak1.Name = "yenimutfak1";
-            this.yenimutfak1.Size = new System.Drawing.Size(928, 635);
-            this.yenimutfak1.TabIndex = 12;
-            // 
             // anaMenü2
             // 
             this.anaMenü2.BackColor = System.Drawing.Color.White;
@@ -380,6 +373,13 @@
             this.sipariş1.Size = new System.Drawing.Size(931, 640);
             this.sipariş1.TabIndex = 11;
             // 
+            // yenimutfak1
+            // 
+            this.yenimutfak1.Location = new System.Drawing.Point(248, 37);
+            this.yenimutfak1.Name = "yenimutfak1";
+            this.yenimutfak1.Size = new System.Drawing.Size(928, 635);
+            this.yenimutfak1.TabIndex = 12;
+            // 
             // AnaGiriş
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -389,17 +389,18 @@
             this.Controls.Add(this.btnÇıkış);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.anaMenü2);
+            this.Controls.Add(this.kasa2);
             this.Controls.Add(this.rezervasyon2);
             this.Controls.Add(this.menü1);
             this.Controls.Add(this.personel1);
             this.Controls.Add(this.sipariş1);
             this.Controls.Add(this.yenimutfak1);
-            this.Controls.Add(this.anaMenü2);
-            this.Controls.Add(this.kasa2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "AnaGiriş";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Restoran Sistemi";
             this.Load += new System.EventHandler(this.AnaGiriş_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
