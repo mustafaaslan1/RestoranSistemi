@@ -15,8 +15,10 @@ namespace RestoranSistemi
         public Rezervasyon()
         {
             InitializeComponent();
-        }
 
+            textBox1.KeyPress += TextBox_KeyPress;
+        }
+       
         private void Rezervasyon_Load(object sender, EventArgs e)
         {
             rezervasyonGroupBox.Visible = true;
@@ -29,6 +31,14 @@ namespace RestoranSistemi
             listView1.Columns.Add("SAAT", 120);
             listView1.Columns.Add("TARİH", 120);
             listView1.Columns.Add("TELEFON", 140);
+        }
+
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && e.KeyChar != ' ' && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
 
         private void btnKayıt_Click(object sender, EventArgs e)
@@ -74,6 +84,14 @@ namespace RestoranSistemi
 
                 seçim = MessageBox.Show("Listeden bir seçim yapmalısınız!", "UYARI", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
+        }
+
+        private void btnTemizle_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            maskedTextBox1.Text = "";
+            maskedTextBox2.Text = "";
+            maskedTextBox3.Text = "";
         }
     }
 }

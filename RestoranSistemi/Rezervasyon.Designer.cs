@@ -54,6 +54,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.görüntüGroupBox = new System.Windows.Forms.GroupBox();
             this.listView1 = new System.Windows.Forms.ListView();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.btnTemizle = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.rezervasyonGroupBox.SuspendLayout();
             this.görüntüGroupBox.SuspendLayout();
@@ -62,6 +65,9 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SandyBrown;
+            this.panel1.Controls.Add(this.panel10);
+            this.panel1.Controls.Add(this.panel11);
+            this.panel1.Controls.Add(this.btnTemizle);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.panel6);
             this.panel1.Controls.Add(this.panel9);
@@ -101,7 +107,7 @@
             // panel9
             // 
             this.panel9.BackColor = System.Drawing.Color.Chocolate;
-            this.panel9.Location = new System.Drawing.Point(0, 459);
+            this.panel9.Location = new System.Drawing.Point(0, 543);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(17, 65);
             this.panel9.TabIndex = 9;
@@ -117,7 +123,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.Chocolate;
-            this.panel5.Location = new System.Drawing.Point(225, 460);
+            this.panel5.Location = new System.Drawing.Point(225, 544);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(19, 65);
             this.panel5.TabIndex = 9;
@@ -125,7 +131,7 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.Chocolate;
-            this.panel8.Location = new System.Drawing.Point(0, 363);
+            this.panel8.Location = new System.Drawing.Point(0, 449);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(17, 65);
             this.panel8.TabIndex = 9;
@@ -133,7 +139,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.Chocolate;
-            this.panel4.Location = new System.Drawing.Point(225, 364);
+            this.panel4.Location = new System.Drawing.Point(225, 450);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(19, 65);
             this.panel4.TabIndex = 9;
@@ -172,7 +178,7 @@
             this.btnKapat.FlatAppearance.BorderSize = 0;
             this.btnKapat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKapat.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnKapat.Location = new System.Drawing.Point(0, 458);
+            this.btnKapat.Location = new System.Drawing.Point(0, 542);
             this.btnKapat.Name = "btnKapat";
             this.btnKapat.Size = new System.Drawing.Size(238, 66);
             this.btnKapat.TabIndex = 7;
@@ -185,7 +191,7 @@
             this.btnGörüntüle.FlatAppearance.BorderSize = 0;
             this.btnGörüntüle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGörüntüle.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnGörüntüle.Location = new System.Drawing.Point(3, 363);
+            this.btnGörüntüle.Location = new System.Drawing.Point(3, 449);
             this.btnGörüntüle.Name = "btnGörüntüle";
             this.btnGörüntüle.Size = new System.Drawing.Size(235, 66);
             this.btnGörüntüle.TabIndex = 6;
@@ -330,6 +336,35 @@
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.Chocolate;
+            this.panel10.Location = new System.Drawing.Point(0, 357);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(17, 65);
+            this.panel10.TabIndex = 13;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.Chocolate;
+            this.panel11.Location = new System.Drawing.Point(225, 358);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(19, 65);
+            this.panel11.TabIndex = 12;
+            // 
+            // btnTemizle
+            // 
+            this.btnTemizle.FlatAppearance.BorderSize = 0;
+            this.btnTemizle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTemizle.Font = new System.Drawing.Font("Segoe UI Semibold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnTemizle.Location = new System.Drawing.Point(3, 357);
+            this.btnTemizle.Name = "btnTemizle";
+            this.btnTemizle.Size = new System.Drawing.Size(235, 66);
+            this.btnTemizle.TabIndex = 11;
+            this.btnTemizle.Text = "Temizle";
+            this.btnTemizle.UseVisualStyleBackColor = true;
+            this.btnTemizle.Click += new System.EventHandler(this.btnTemizle_Click);
+            // 
             // Rezervasyon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -377,5 +412,8 @@
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel11;
+        private System.Windows.Forms.Button btnTemizle;
     }
 }

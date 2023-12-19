@@ -15,8 +15,16 @@ namespace RestoranSistemi
         public Personel()
         {
             InitializeComponent();
+            textBox1.KeyPress += TextBox_KeyPress;
+            textBox3.KeyPress += TextBox_KeyPress;
         }
-
+        private void TextBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && e.KeyChar != ' ' && !char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
         private void btnEkle_Click(object sender, EventArgs e)
         {
             if (radioButton1.Checked)
